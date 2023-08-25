@@ -1,18 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Boletin</title>
 </head>
 
 <body>
-
-
-
+<div class="container-fluid">
+    <h1 class="text-danger text-center p-5">Ingrese sus datos para generar el boletin</h1>
+    <form >
+        <div class="mb-3">
+          <label for="inputTextName" class="label">Nombre</label>
+          <input type="text" class="form-control" id="inputTextName">
+        </div>
+        <div class="mb-3">
+            <label for="inputTextLastName" class="label">Apellido</label>
+            <input type="text" class="form-control" id="inputTextLastName">
+          </div>
+        <div class="mb-3">
+          <label for="inputNumberIdentication"  class="label">Identificacion</label>
+          <input type="number" class="form-control" id="inputNumberIdentication">
+        </div>
+        <button type="submit" class="btn btn-danger" id="buttonGenerate">Aceptar</button>
+      </form>
+</div>
+    
+    <script src="./javascript/logica.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous">
