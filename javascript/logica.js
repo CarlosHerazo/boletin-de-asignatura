@@ -1,10 +1,10 @@
-document.getElementById("buttonGenerate").addEventListener("click", ()=>{
-    let myName = document.getElementById("inputTextName").value;
-    let lastName = document.getElementById("inputTextLastName").value;
-    let identification = document.getElementById("inputNumberIdentication").value;
-    console.log(myName);
-    console.log(lastName);
-    console.log(identification);
-});
+boton = document.getElementById("buttonGenerate");
+boton.addEventListener("click", ()=>{
+   let contenedorBlock = document.getElementById("main-none");
+   let contenedorNone = document.getElementById("encabezado");
+    contenedorBlock.style.display ="block";
+    contenedorNone.style.display = "none";
+})
+
 
 
