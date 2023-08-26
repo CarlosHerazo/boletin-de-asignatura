@@ -16,70 +16,67 @@
     <form>
       <div class="mb-3">
         <div class="input-group">
-          <span class="input-group-text bg-dange">Nombre y Apellido</span>
+          <span class="input-group-text bg-danger text-white">Nombre y Apellido</span>
           <input type="text" aria-label="First name" class="form-control" id="inputTextName">
           <input type="text" aria-label="Last name" class="form-control" id="inputTextLastName">
         </div>
       </div>
       <div class="input-group mb-3">
-        <span class="input-group-text bg-danger">Identificacion</span>
+        <span class="input-group-text bg-danger text-white">Identificacion</span>
         <input type="text" class="form-control"  id="inputNumberIdentication">
       </div>
     </form>
-    <button type="submit" class="btn btn-danger"  id="buttonGenerate">Aceptar</button>
+    <button type="submit" class="btn btn-primary"  id="buttonGenerate">Aceptar</button>
+    
   </div>
 
-  <main class="container " id="main-none">
-    <div class="container text-center contenedorMargen">
+  <main class="container text-white" id="main-none">
+    <div class="container  bg-danger text-center contenedorMargen">
       <div class="row container-Center" >
         <div class="col">
           <h5>Periodo 1</h5>
         </div>
         <div class="col">
-         <h5> Institucion Educativa Ambientalista Cartagena</h5>
+         <h3> Institucion Educativa Ambientalista Cartagena</h3>
         </div>
         <div class="col img-container">
           <img src="./img/Escudo_de_El_Colegio.svg" alt="">
         </div>
       </div>
 
-      <div class="row container-Center">
+      <div class="row container-Center bg-secondary">
         <div class="col-4 border-butoom">Nombre</div>
         <div class="col-8" id="guardarName"></div>
       </div>
-      <div class="row container-Center ">
+      <div class="row container-Center bg-dark">
         <div class="col-4">Apellido</div>
         <div class="col-8" id="guardarLastName"></div>
       </div>
-      <div class="row container-Center ">
+      <div class="row container-Center bg-secondary">
         <div class="col-4">Identificacion</div>
         <div class="col-8" id="guardarIdentification"></div>
       </div>
 
       
-      <div class="row container-Center">
+      <div class="row container-Center bg-dark">
         <div class="col-4">Fecha</div>
         <div class="col-8" id="fecha"></div>
       </div>
-      <div class="row container-Center">
+      <div class="row container-Center bg-secondary">
         <div class="col-4">Puesto</div>
         <div class="col-8" id="puesto"></div>
       </div>
       
-      <div class="row container-Center">
+      <div class="row container-Center bg-dark">
         <div class="col-4">promedio</div>
         <div class="col-8" id="promedioNotas"></div>
       </div>
-      
-    
-
-
     </div>
 
     <div class="container">
-      <h1> INFORME DE PERIODO </h1>
+      <h1 class="text-center"> INFORME DE PERIODO </h1>
       <div class="container-fluid text-center">
-        <table class="table  table-striped-columns">
+        <table class="table  table-dark table-striped-columns ">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -161,14 +158,32 @@
               <td id="nota"></td>
               <td id="bservacion"></td>
             </tr>
+            <tr>
+              <th scope="row">13</th>
+              <td>Comportamiento</td>
+              <td id="nota"></td>
+              <td id="bservacion"></td>
+            </tr>
           </tbody>
         </table>
-        <button type="submit" class="btn btn-danger"  id="regresar">Volver</button>
         </div>
-  
       </div>
     </div>
-   
+    <div class="container pos-relative">
+      <div class="row margin">
+        <div class="col firma">
+          <img src="./img/firma_1.png" alt="">
+          <p class="text-black pos-adsolute">Firma director</p>
+        </div>
+        <div class="col firma">
+          <img src="./img/firma_2.png" alt="">
+          <p  class="text-black pos-adsolute2">Firma subdirector</p>
+        </div>
+      </div>
+    </div>  
+    <div class="container margin-button">
+      <button type="submit" class="btn btn-danger"  id="regresar">Volver</button>
+    </div>
   </main>
 
   <script src="./javascript/logica.js"></script>

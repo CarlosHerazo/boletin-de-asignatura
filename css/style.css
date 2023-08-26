@@ -16,11 +16,57 @@ img{
 
 
 .contenedorMargen{
-    margin-top: 60px;
-    border: 1px solid #333;
-    padding: 20px;
-    border-radius: 20px;
+    margin-top: 50px;
 }
 #main-none{
 display: none;
+}
+
+.firma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.margin{
+    gap: 30px;
+}
+
+.firma img{
+    width: 250px;
+}
+
+.margin-button{
+    margin: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.bg-secondary, .bg-dark{
+    padding: 20px;
+}
+
+.pos-relative{
+    position: relative;
+}
+
+
+.pos-adsolute2{
+    position: absolute;
+    top: 100%;
+}
+
+
+   
+.pos-adsolute{
+    position: absolute;
+    top: 50%;
+}
+@media screen and (min-width: 850px) {
+	.pos-adsolute{
+        position: absolute;
+        top: 100%;
+    }
 }
